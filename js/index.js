@@ -24,20 +24,14 @@ else {
         const digit3 = userNumbArr[2];
 
         const allEqual = digit1 === digit2 && digit2 === digit3 ? digit1 : false;
-        let anyEqual = false;
-
-        if (digit1 === digit2 || digit1 === digit3) {
-            anyEqual = digit1;
-        } else if (digit2 === digit3) {
-            anyEqual = digit2;
-        }       
-
+        const anyEqual = (digit1 === digit2 || digit1 === digit3) ? digit1 : (digit2 === digit3 ? digit2 : false);
+        
         if (allEqual) {
-            alert(` Ваше тризначне число: ${userNumb}\n У числа всі цифри це ${allEqual}`);
+            alert(`Ваше тризначне число: ${userNumb}\n У числа всі цифри це ${allEqual}`);
         } else if (anyEqual) {
-            alert(` Ваше тризначне число: ${userNumb}\n У числа дві цифри ${anyEqual}`);
+            alert(`Ваше тризначне число: ${userNumb}\n У числа дві цифри ${anyEqual}`);
         } else {
-            alert(` Ваше тризначне число: ${userNumb}`);
+            alert(`Ваше тризначне число: ${userNumb}`);
         }
     }
 }
