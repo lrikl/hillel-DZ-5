@@ -26,7 +26,7 @@ else {
         const allEqual = digit1 === digit2 && digit2 === digit3 ? "так" : "ні";
         const anyEqual = digit1 === digit2 || digit1 === digit3 || digit2 === digit3 ? "так" : "ні";
 
-        alert(`Дякую! Ваше число: ${userNumb}\nЧи є серед цифр цифри однакові? : ${anyEqual}\nЧи правда, що всі цифри однакові? : ${allEqual}`);
+        alert(`Дякую! Ваше тризначне число: ${userNumb}\nЧи є серед цифр цифри однакові? : ${anyEqual}\nЧи правда, що всі цифри однакові? : ${allEqual}`);
     }
 }
 
